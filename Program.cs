@@ -27,3 +27,20 @@ int historial = int.Parse(Console.ReadLine());
 
 Console.Write("Tiene fiador (S/N): ");
 char fiador = char.Parse(Console.ReadLine().ToUpper());
+
+if (ingreso <= 0)
+{
+    Console.WriteLine("Ingreso no valido");
+    return;
+}
+if (monto <= 0)
+{
+    Console.WriteLine("Monto no valido");
+    return;
+}
+if (historial < 1 || historial > 4)
+{
+    Console.WriteLine("Historial no valido");
+    return;
+}
+
