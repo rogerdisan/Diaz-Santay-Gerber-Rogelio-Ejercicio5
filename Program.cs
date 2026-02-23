@@ -44,3 +44,8 @@ if (historial < 1 || historial > 4)
     return;
 }
 
+string resultado = "";
+string motivo = "";
+
+switch (tipo)
+{
